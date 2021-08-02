@@ -1,0 +1,35 @@
+body {
+    background: url(images/batman-call.jpg);
+    size: 50%;
+}
+
+#moviesUL {
+    list-style-type: none;
+}
+
+
+#container {
+    display: flex;
+    flex-direction: row;
+    /*align-items: center;*/
+    
+}
+.lists{
+    margin-bottom: 90px;
+    text-align: center;
+    background-color: rgb(219, 240, 240);
+    padding: 55px 40px 40px;
+    border-radius: 15px;
+}
+
+.posters{
+    margin-bottom: 25px;
+}
+
+.movieBtns {
+    font-size: 1.5em;
+    border: none;
+    background-color: rgb(219, 240, 240);
+    color: rgb(51, 66, 112);
+
+}
