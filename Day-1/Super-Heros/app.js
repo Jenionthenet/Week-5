@@ -15,7 +15,7 @@ request.addEventListener('load', function () {
             <div>
                 <img  class="posters" src="${movie.Poster}" alt="">
             </div>
-            <h3 onClick= showMovieDetails("${movie.imdbID}") >${movie.Title}</h3>
+            <h3 class="liH3" onClick= showMovieDetails("${movie.imdbID}") >${movie.Title}</h3>
         </li>
         `
         return movieItem
@@ -23,23 +23,19 @@ request.addEventListener('load', function () {
     })
     moviesUL.innerHTML = movieItems.join("")
 
-
 })
 request.open("GET", batMoviesURL)
 request.send()
 
 
 function showMovieDetails(id) {
-    //const movieId = button.getAttribute('movieBtns')
+    
+      console.log(id)
 
-    console.log(id)
-
-// http://www.omdbapi.com/?i=insertSelectedimdbIDhere&apikey=insertyourkeyhere
 
 const selectedMovieUrl = `http://www.omdbapi.com/?i=${id}&apikey=47657be6
     `
-
-console.log(selectedMovieUrl) // see if this url works 
+console.log(selectedMovieUrl)  
 
 let detailRequest = new XMLHttpRequest()
 detailRequest.addEventListener("load", function () {
@@ -49,10 +45,10 @@ detailRequest.addEventListener("load", function () {
         const  detailsItem = `
         <h1>${result.Title}</h1>
         <div><img class="posterPic"src="${result.Poster}" alt=""></div>
-        <h3>${result.year}</h3>
-        <h3>${result.Rated}</h3>
-        <h3>${result.Released}</h3>
-        <h3>${result.Director}</h3>`
+        <h3>Year: ${result.Year}</h3>
+        <h3>Rating: ${result.Rated}</h3>
+        <h3>Released on: ${result.Released}</h3>
+        <h3>Director: ${result.Director}</h3>`
         
         return detailsItem
 
@@ -61,7 +57,6 @@ detailRequest.addEventListener("load", function () {
     emptyDiv.innerHTML = movieDetails()
     
 })
-
 
 
 detailRequest.open("GET", selectedMovieUrl)

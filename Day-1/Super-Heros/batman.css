@@ -1,12 +1,16 @@
 body {
-    background: url(images/batman-call.jpg);
-    size: 50%;
+    background: url(images/batman-call.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 #moviesUL {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    width: 60%;
 }
 
 
@@ -14,16 +18,19 @@ body {
 #container {
     padding-top: 100px;
     display: flex;
+    justify-content: space-around;
     
-    /*align-items: center;*/
+   
     
 }
 .lists{
     margin-bottom: 90px;
     text-align: center;
-    background-color: rgb(219, 240, 240);
-    padding: 40px 15px 15px;
+    background-color: rgba(219, 240, 240, 0.4);
+    padding: 30px 10px 10px;
     border-radius: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
     
 }
 
@@ -33,11 +40,36 @@ body {
  
 }
 
-.movieBtns {
+.liH3 {
     font-size: 1em;
     border: none;
-    background-color: rgb(219, 240, 240);
-    color: rgb(51, 66, 112);
+    /*background-color: rgb(219, 240, 240);*/
+    color: rgb(35, 41, 59);
     width: 130px;
+}
+
+h3 {
+    font-size: 1em;
+    border: none;
+    /*background-color: rgb(219, 240, 240);*/
+    color: rgb(30, 35, 49);
+    
 
 }
+
+h1 {
+    width: 320px;
+    text-align: center;
+}
+
+#emptyDiv {
+    background-color: rgba(219, 240, 240, 0.4);
+    padding: 30px 20px 20px;
+    border-radius: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
