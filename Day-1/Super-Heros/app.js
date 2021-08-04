@@ -1,7 +1,7 @@
 const moviesUL = document.getElementById("moviesUL")
 const batMoviesURL = "https://www.omdbapi.com/?s=batman&apikey=47657be6"
 const emptyDiv = document.getElementById("emptyDiv")
-const titleBtns = document.getElementsByClassName("movieBtns")
+
 let request = new XMLHttpRequest()
 
 request.addEventListener('load', function () {

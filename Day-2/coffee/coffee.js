@@ -78,7 +78,7 @@ function addOrder() {
 addOrderBtn.addEventListener("click", function () {
 
     addOrder()
-
+    getAllOrders()
 })
 
 function deletDrinkOrder() {
@@ -94,6 +94,7 @@ function deletDrinkOrder() {
 
 delOrderBtn.addEventListener("click", function () {
     deletDrinkOrder()
+    getAllOrders()
 })
 
 
@@ -102,22 +103,22 @@ function getOrderByEmail() {
     let searchRequest = new XMLHttpRequest()
     searchRequest.open("GET", searchEmailOrder)
     searchRequest.send()
-    searchEmail.value = ""
+    //searchEmail.value = ""
 
     searchRequest.addEventListener("load", function () {
         const orders = JSON.parse(this.responseText)
-        const orderItems = function () {
+        const orderItems = orders.map(function(order) {
             console.log(orders)
             return `
 
             <li>
-                <h4>${orders.email}</h4>
-                <h4>${orders.type}</h4>
-                <h4>${orders.size}</h4>
-                <h4>${orders.price}</h4>
+                <h4>${order.email}</h4>
+                <h4>${order.type}</h4>
+                <h4>${order.size}</h4>
+                <h4>${order.price}</h4>
             </li>
             `
-        }
+        })
         console.log(orderItems)
         ordersUL.innerHTML = orderItems
 
