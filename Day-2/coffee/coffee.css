@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(221, 204, 182);
+} 
+h1 {
+    color: rgb(160, 86, 60);
+}
+
+#ordersUl {
+   list-style-type: none;
+   margin-left: 100px;
+   margin-top: 50px;
+}
+
+input {
+    height: 30px;
+    border-radius: 5px;
+}
+
+.allOrders {
+    background-color: rgb(189, 153, 117);
+    width: 300px;
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    color: white;
+    border: solid 1px rgb(207, 141, 116)
+}
+
+h4 {
+    font-size: 1.5em;
+    margin: ;
+    
+}
+
+.select {
+    height: 30px;
+    border-radius: 5px;
+}
+
+#inputDiv {
+    margin-left: 50px;
+    font-size: 1.25em;
+}
+
+#inputDiv div{
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 1.25em;
+    background-color: bisque;
+    border-radius: 10px;
+    border: rgb(207, 141, 116) solid 1px;
+}
