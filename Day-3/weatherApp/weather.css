@@ -1,0 +1,80 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+    
+}
+
+#description {
+    font-size: 1.30em;
+    margin: 30px 20px;
+}
+
+#cityBox {
+    height: 27px;
+    width: 175px;
+    margin-right: 10px;
+}
+
+#citySearchBtn {
+    height: 27px;
+    width: 70px;
+    font-size: 1.10em;
+}
+
+
+h1 {
+    font-size: 3.25em;
+    margin: 30px;
+
+}
+
+#icon {
+    width: 250px;
+}
+
+
+#cityName {
+    font-size: 2.5em;
+}
+
+#currentTemp {
+    font-size: 4em;
+    margin-left: 20px;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+}
+
+#iconAndTemp {
+    display: flex;
+}
+
+#currentTempFeel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#weatherInfo {
+    margin-top: 50px;
+}
+
+.answers{
+    font-size: 1.75em;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    h1 {
+        font-size: 5em;
+    }
+    #cityBox {
+        height: 30px;
+
+    }
+}
