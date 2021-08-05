@@ -59,7 +59,6 @@ function displayOrders(coffeOrders){
   addOrderBtn.addEventListener("click", function() {
     addOrders()
     getAllOrders()
-    
   })
 
   displayBtn.addEventListener("click", function() {
